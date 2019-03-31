@@ -3,8 +3,8 @@ require 'pry'
 
 def load_library(file_path)
   emoticons_data = YAML.load_file(file_path)
-  get_meaning, get_emoticon = {}
-  #get_emoticon = {}
+  get_meaning = {}
+  get_emoticon = {}
   emoticons_data.each {|meaning, emoticons|
     get_meaning[emoticons[1]] = meaning
     get_emoticon[emoticons[0]] = emoticons[1]
